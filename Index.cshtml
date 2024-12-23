@@ -3,92 +3,94 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/General_Layout.cshtml";
 }
+<!-- Add AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<!-- Add AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <style>
     .nav-item {
-      align-items: end;
-      color: rgb(255, 153, 51);
+        align-items: end;
+        color: rgb(255, 153, 51);
     }
 
     .menu:hover {
-      color: white;
-      border-radius: 10%;
-      background-color: rgb(255, 153, 51);
-
-
+        color: white;
+        border-radius: 10%;
+        background-color: rgb(255, 153, 51);
     }
 
     .link {
-      text-decoration: none;
-      color: white;
-      transition: all ease-in-out 0.4s;
-
+        text-decoration: none;
+        color: white;
+        transition: all ease-in-out 0.4s;
     }
 
-    .link:hover {
-      color: #d1350e;
-
-    }
+        .link:hover {
+            color: #d1350e;
+        }
 
     .main_headding {
-      transition: 0.7s;
+        transition: 0.7s;
     }
 
-    .main_headding:hover {
-      background-color: rgb(255, 153, 51);
-      color: white;
-      border-radius: 0% 0% 40% 40%;
-    }
+        .main_headding:hover {
+            background-color: rgb(255, 153, 51);
+            color: white;
+            border-radius: 0% 0% 40% 40%;
+        }
 
-    .main_headding:hover #text1 {
-      color: white !important;
-    }
+            .main_headding:hover #text1 {
+                color: white !important;
+            }
 
     #text1:hover {
-      color: white;
+        color: white;
     }
 
     #text1 {
-      color: rgb(255, 153, 51);
-      font-weight: 800;
+        color: rgb(255, 153, 51);
+        font-weight: 800;
     }
 
     .shadow-img {
-      width: 100%;
-      max-width: 100%;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
 
-    .shadow-img:hover {
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-      transform: translateY(-5px);
-    }
-    #button1
-    {
-      display: none;
-      margin-top: -60px;
-    }
-    #button2
-    {
-      display: none;
-      margin-top: -60px;
+        .shadow-img:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5px);
+        }
+
+    #button1 {
+        display: none;
+        margin-top: -60px;
     }
 
-    #logo
-    {
-    display: block;
+    #button2 {
+        display: none;
+        margin-top: -60px;
     }
-    #hea
-    {
-      display: none;
+
+    #logo {
+        display: block;
     }
-    
+
+    #hea {
+        display: none;
+    }
 </style>
 
 <!--start slidar-->
 
-<div class="row p-0 m-0" style=" max-height: 500px; ">
+<div class="row p-0 m-0" style=" max-height: 500px; "data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <div class="col-sm-12 m-0 p-0">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -101,15 +103,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="~/Content/img/bareme.jpg" class="d-block w-100" alt="..." width="100%" height="500px">
+                    <img src="~/Content/img/bareme.jpg" class="d-block w-100" alt="..." style="width:100%; height:500px;">
                 </div>
                 <div class="carousel-item">
-                    <img src="~/Content/img/banner.jpg" class="d-block w-100" alt="..." width="100%"
-                         height="500px">
+                    <img src="~/Content/img/banner.jpg" class="d-block w-100" alt="..." style="width :100%;height:500px;">
                 </div>
                 <div class="carousel-item">
-                    <img src="~/Content/img/banner.jpg" class="d-block w-100" alt="..." width="100%"
-                         height="500px">
+                    <img src="~/Content/img/banner.jpg" class="d-block w-100" alt="..." style="width :100%;height:500px;">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -129,7 +129,7 @@
 <!--start noti-->
 <!--end noti-->
 <!-- notification section strart -->
-<div class="row m-0 p-0 bg-light">
+<div class="row m-0 p-0 bg-light"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
 
     <div class="col-lg-10 col-sm-12 p-0 m-0 py-2 ">
         <marquee behavior="" onmouseover="stop()" onmouseout="start()" direction="" style="color: rgb(255, 153, 51);" class="fs-4">
@@ -147,11 +147,11 @@
 <!-- notification section end -->
 <!--  about section  start-->
 
-<div class="row mt-3 p-0 m-0">
+<div class="row mt-3 p-0 m-0"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <div class="col-sm-1"></div>
     <div class="col-sm-10 shadow p-3 mb-5  bg-body-tertiary rounded" style="border: 1px solid rgb(255, 153, 51);">
         <h2 class="main_headding text-center py-2 " id="text1" style="font-weight: 800;">चित्रकूट धाम</h2>
-        <div class="row p-0 m-0">
+        <div class="row p-0 m-0"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="col-sm-6">
                 <img src="~/Content/img/1.jpeg" class="img-fluid shadow-img mt-3" width="100%" height="100%" alt="">
             </div>
@@ -178,17 +178,17 @@
     </div>
     <div class="col-sm-1"></div>
 </div>
-<div class="row p-0 m-0 my-1">
+<div class="row p-0 m-0 my-1"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <div class="col-sm-1"></div>
     <div class="col-sm-10 fs-1 main_headding text-center " id="text1">
         <span>पर्यटक स्थल </span>
     </div>
     <div class="col-sm-1"></div>
 </div>
-<div class="row p-0 m-0 my-3">
+<div class="row p-0 m-0 my-3"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-        <div class="row">
+        <div class="row"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="col-sm-3 d-flex justify-content-center mt-2">
                 <div class="card shadow-img" style="width: 16rem;">
                     <img src="~/Content/img/ramghat1.jpg" class="card-img-top" alt="..." style="height: 150px;">
@@ -249,17 +249,17 @@
     </div>
     <div class="col-sm-1"></div>
 </div>
-<div class="row p-0 m-0 my-2">
+<div class="row p-0 m-0 my-2"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <div class="col-sm-1"></div>
     <div class="col-sm-10 fs-1 main_headding text-center " id="text1">
         <span>वर्तमान महंत  </span>
     </div>
     <div class="col-sm-1"></div>
 </div>
-<div class="row p-0 m-0">
+<div class="row p-0 m-0"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <div class="col-sm-1"></div>
     <div class="col-sm-10 shadow p-3 mb-5  bg-body-tertiary rounded">
-        <div class="row my-2">
+        <div class="row my-2"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="col-sm-3">
                 <img src="~/Content/img/rs.jpg" class="img-fluid" height="150px" alt="">
             </div>
@@ -269,7 +269,7 @@
                     वर्तमान महंत पूज्य महाराजश्री श्री महंत श्री रामस्वरूप दास जी महाराज जी का जन्म श्री उत्तर प्रदेश के बुंदेलखंड क्षेत्र में स्थित जालौन जिले के अंतर्गत कूंड़ा ग्राम में सुप्रसिद्ध सरयू पारीय ब्राह्मण वंश परंपरा में पिता श्री कौशल किशोर दुबे एवं माता श्रीमती लक्ष्मीबाई जी के यहाँ हुआ था। भगवत कृपा एवं जन्म जन्मांतर की साधना के परिणाम स्वरुप बाल्य काल से ही अंतर्मुखी भगवत निष्ठ स्वभाव वाले रहे। आधुनिक शिक्षा में रूचि न होने के कारण 13 वर्ष की अल्पायु में ही संतों की टोली के साथ गृह त्यागी होकर अनेक तीर्थों का भ्रमण करते हुए पावन माघ मास में तीर्थराज प्रयाग पहुंचे। पूज्य पाद को शैशवावस्था से ही किसी महापुरुष के दर्शन सपनों में हुआ करते थे।
                 </p><br><br>
                 <a href="@Url.Action("Mahant", "General")">
-                    <button type="button" class="btn" style="background-color: rgb(255, 153, 51); color: white; width: 100px; font-weight: 800;">आगे पढ़ें</button>
+            <input type="button" class="btn" style="background-color: rgb(255, 153, 51); color: white; width: 100px; font-weight: 800;">आगे पढ़ें</input>
                 </a>
 
             </div>
