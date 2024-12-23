@@ -1,0 +1,281 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/General_Layout.cshtml";
+}
+<style>
+    .nav-item {
+      align-items: end;
+      color: rgb(255, 153, 51);
+    }
+
+    .menu:hover {
+      color: white;
+      border-radius: 10%;
+      background-color: rgb(255, 153, 51);
+
+
+    }
+
+    .link {
+      text-decoration: none;
+      color: white;
+      transition: all ease-in-out 0.4s;
+
+    }
+
+    .link:hover {
+      color: #d1350e;
+
+    }
+
+    .main_headding {
+      transition: 0.7s;
+    }
+
+    .main_headding:hover {
+      background-color: rgb(255, 153, 51);
+      color: white;
+      border-radius: 0% 0% 40% 40%;
+    }
+
+    .main_headding:hover #text1 {
+      color: white !important;
+    }
+
+    #text1:hover {
+      color: white;
+    }
+
+    #text1 {
+      color: rgb(255, 153, 51);
+      font-weight: 800;
+    }
+
+    .shadow-img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .shadow-img:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+      transform: translateY(-5px);
+    }
+    #button1
+    {
+      display: none;
+      margin-top: -60px;
+    }
+    #button2
+    {
+      display: none;
+      margin-top: -60px;
+    }
+
+    #logo
+    {
+    display: block;
+    }
+    #hea
+    {
+      display: none;
+    }
+    
+</style>
+
+<!--start slidar-->
+
+<div class="row p-0 m-0" style=" max-height: 500px; ">
+    <div class="col-sm-12 m-0 p-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active bg-success" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="bg-success"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+                        class="bg-success"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/Content/img/bareme.jpg" class="d-block w-100" alt="..." width="100%" height="500px">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/img/banner.jpg" class="d-block w-100" alt="..." width="100%"
+                         height="500px">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/img/banner.jpg" class="d-block w-100" alt="..." width="100%"
+                         height="500px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!--end slidar-->
+<!--start noti-->
+<!--end noti-->
+<!-- notification section strart -->
+<div class="row m-0 p-0 bg-light">
+
+    <div class="col-lg-10 col-sm-12 p-0 m-0 py-2 ">
+        <marquee behavior="" onmouseover="stop()" onmouseout="start()" direction="" style="color: rgb(255, 153, 51);" class="fs-4">
+            <img src="~/Content/img/nn.png" alt="" height="25px" width="30px">
+            " सोमवती अमावस्या मेले में पधारे हुए समस्त श्रद्धालुओ का ट्रस्ट श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार एवं श्री
+            रामझरोखा ट्रस्ट श्री चित्रकूट धाम सतना म.प्र. आपका हार्दिक स्वागत एवं अभिनंदन करता है"
+        </marquee>
+    </div>
+    <div class="col-lg-2 col-sm-12 p-0 m-0 py-2 text-center" style="background-color:  rgb(255, 153, 51); ">
+        <span class="fs-5 text-center " style="color: #fff;"><b>विशेष सूचनायें:</b></span>
+    </div>
+
+</div>
+
+<!-- notification section end -->
+<!--  about section  start-->
+
+<div class="row mt-3 p-0 m-0">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 shadow p-3 mb-5  bg-body-tertiary rounded" style="border: 1px solid rgb(255, 153, 51);">
+        <h2 class="main_headding text-center py-2 " id="text1" style="font-weight: 800;">चित्रकूट धाम</h2>
+        <div class="row p-0 m-0">
+            <div class="col-sm-6">
+                <img src="~/Content/img/1.jpeg" class="img-fluid shadow-img mt-3" width="100%" height="100%" alt="">
+            </div>
+            <div class="col-sm-6">
+                <h3 class="main_headding text-center py-2" id="text1" style="font-weight: 800;"> श्री कामदगिरी गिरिराज</h3>
+                <p>
+                    श्री चित्रकूट धाम तीर्थ क्षेत्र में अनेकों ऋषि मुनियों की तपस्थलियाँ एवं भगवान श्री राम जी की लीलास्थलियाँ
+                    विद्यमान है। भगवान श्री राम जी के वनवास काल में उनके पावन दर्शनों के लिए सभी देवता, ऋषि-मुनि, नदी-पर्वत
+                    एवं संपूर्ण तीर्थ श्री चित्रकूट धाम पधारे। जिनके स्मृति अवशेष चित्रकूट तीर्थ क्षेत्र में आज भी विद्यमान
+                    हैं। चित्रकूट धाम की तीर्थ श्रँखला में श्री कामदगिरि गिरिराज का सर्वोच्च स्थान है। चित्रकूट गिरि, राम
+                    गिरि, राम शैल आदि श्री कामदगिरि के अन्य नाम हैं।श्री कामदगिरि की आकृति प्रणवाकार अथवा धनुषाकार है। इनका
+                    परिमाण (परिक्रमा) लगभग 5 किलोमीटर का है।श्री कामदगिरि के आधिदैविक स्वरूप को भगवान कामतानाथ जी कहते हैं। ये
+                    चार मुख वाले देवता हैं जो चारों दिशाओं में अवस्थित हैं। ऐसी मान्यता है कि कामदगिरि पर्वत अंदर से खोखला है।
+                    जिसके चार गुफा द्वार चारों दिशाओं में स्थित रहे हैं। समय के साथ-साथ वे द्वार तो बंद हो गए किंतु उनके
+                    प्रतीक चिन्ह आज भी विद्यमान हैं। उत्तर द्वार को प्रमुख द्वार भी कहा जाता है।चारों द्वारों में भगवान श्री
+                    कामतानाथ जी के चार मुखारविंद विराजमान है।
+                </p>
+                <p class="text-center">
+                    कामद भे गिरि राम प्रसादा । <br>
+                    अवलोकत अपहरत बिषादा ॥
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+<div class="row p-0 m-0 my-1">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 fs-1 main_headding text-center " id="text1">
+        <span>पर्यटक स्थल </span>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+<div class="row p-0 m-0 my-3">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <div class="row">
+            <div class="col-sm-3 d-flex justify-content-center mt-2">
+                <div class="card shadow-img" style="width: 16rem;">
+                    <img src="~/Content/img/ramghat1.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(255, 153, 51); font-weight: 800;">राम घाट</h5>
+                        <p class="card-text">
+                            इस मंडल के अंतर्गत मां मंदाकिनी के पावन तट पर अनेक घाटों में सर्व प्रमुख श्री
+                            रामघाट का वर्णन आता है।
+                        </p><br>
+                        <a href="@Url.Action("About", "General")" class="btn" style="color: white; background-color: rgb(255, 153, 51); font-weight: 700;">और जाने</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 d-flex justify-content-center mt-2">
+                <div class="card shadow-img" style="width: 16rem;">
+                    <img src="~/Content/img/hanuman dhara.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(255, 153, 51); font-weight: 800;">हनुमान धारा</h5>
+                        <p class="card-text">
+                            लोक मान्यता है कि लंका दहन के पश्चात श्री हनुमान जी के शरीर में अत्यधिक जलन की
+                            अनुभूति हुई।
+                        </p><br>
+                        <a href="@Url.Action("About", "General")" class="btn" style="color: white; background-color: rgb(255, 153, 51); font-weight: 700;">और जाने</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 d-flex justify-content-center mt-2">
+                <div class="card shadow-img" style="width: 16rem;">
+                    <img src="~/Content/img/sati anusuiya.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(255, 153, 51); font-weight: 800;">सति अनुसुइया</h5>
+                        <p class="card-text">
+                            श्री चित्रकूट धाम में स्थित अपने दीर्घकालिक आवास को त्यागने के उपरांत भगवान श्री
+                            सीताराम लक्ष्मण जी महर्षि अत्रि मुनि के आश्रम गए
+                        </p>
+                        <a href="@Url.Action("About", "General")" class="btn" style="color: white; background-color: rgb(255, 153, 51); font-weight: 700;">और जाने</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 d-flex justify-content-center mt-2">
+                <div class="card shadow-img" style="width: 16rem;">
+                    <img src="~/Content/img/gupt godavari.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(255, 153, 51); font-weight: 800;">गुप्त गोदावरी</h5>
+                        <p class="card-text">
+                            विंध्य पर्वत श्रंखला के रमणीक अंचल में स्थित प्रकृति द्वारा निर्मित गुप्त गोदावरी
+                            की गुफाएं नैसर्गिक कला-कौशल का अत्यन्त दुर्लभ नमूना हैं।
+                        </p>
+                        <a href="@Url.Action("About", "General")" class="btn" style="color: white; background-color: rgb(255, 153, 51); font-weight: 700;">और जाने</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+<div class="row p-0 m-0 my-2">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 fs-1 main_headding text-center " id="text1">
+        <span>वर्तमान महंत  </span>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+<div class="row p-0 m-0">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 shadow p-3 mb-5  bg-body-tertiary rounded">
+        <div class="row my-2">
+            <div class="col-sm-3">
+                <img src="~/Content/img/rs.jpg" class="img-fluid" height="150px" alt="">
+            </div>
+            <div class="col-sm-9 pt-3" style="text-align: justify; align-items: center;">
+                <h2 class="main_headding text-center py-2" id="text1">श्री महंत श्री रामस्वरूप दास जी महाराज</h2>
+                <p>
+                    वर्तमान महंत पूज्य महाराजश्री श्री महंत श्री रामस्वरूप दास जी महाराज जी का जन्म श्री उत्तर प्रदेश के बुंदेलखंड क्षेत्र में स्थित जालौन जिले के अंतर्गत कूंड़ा ग्राम में सुप्रसिद्ध सरयू पारीय ब्राह्मण वंश परंपरा में पिता श्री कौशल किशोर दुबे एवं माता श्रीमती लक्ष्मीबाई जी के यहाँ हुआ था। भगवत कृपा एवं जन्म जन्मांतर की साधना के परिणाम स्वरुप बाल्य काल से ही अंतर्मुखी भगवत निष्ठ स्वभाव वाले रहे। आधुनिक शिक्षा में रूचि न होने के कारण 13 वर्ष की अल्पायु में ही संतों की टोली के साथ गृह त्यागी होकर अनेक तीर्थों का भ्रमण करते हुए पावन माघ मास में तीर्थराज प्रयाग पहुंचे। पूज्य पाद को शैशवावस्था से ही किसी महापुरुष के दर्शन सपनों में हुआ करते थे।
+                </p><br><br>
+                <a href="@Url.Action("Mahant", "General")">
+                    <button type="button" class="btn" style="background-color: rgb(255, 153, 51); color: white; width: 100px; font-weight: 800;">आगे पढ़ें</button>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+<!-- about section end -->
